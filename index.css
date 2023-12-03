@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", "sans-serif";
+  background-color: var(--body-bg);
+}
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-color-hover: #fff;
+  --grad-color1: #eeaf61;
+  --grad-color2: #fb9062;
+  --grad-color3: #ee5d6c;
+  --grad-color4: #ce4993;
+  --grad-color5: #6a0d83;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-family: inherit;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 3rem;
+  padding: 1em 2em;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.button:hover {
+  color: var(--btn-color-hover);
+}
+
+.button-border {
+  background: linear-gradient(115deg, #eeaf61, #6a0d83);
+  padding: 5px;
+  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button-border:hover {
+  background: linear-gradient(115deg, #6a0d83, #eeaf61);
+  padding: 5px;
+  transform: scale(1.03);
+}
